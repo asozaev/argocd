@@ -18,17 +18,17 @@ spec:
       containers:
       - image: alpine:3.18
         name: my-alpina
-        resources:
-          requests:
-            memory: "128Mi"
-            cpu: "250m"
-          limits:
-            memory: "384Mi"
-            cpu: "500m"
-        ports:
-        - containerPort: 80
-          protocol: TCP
-          name: http
-        - containerPort: 443
-          protocol: TCP
-          name: ssh
+        # resources:
+        #   requests:
+        #     memory: "128Mi"
+        #     cpu: "250m"
+        #   limits:
+        #     memory: "384Mi"
+        #     cpu: "500m"
+        # ports:
+        # - containerPort: 80
+        #   protocol: TCP
+        #   name: http
+        # - containerPort: 443
+        #   protocol: TCP
+        #   name: ssh
