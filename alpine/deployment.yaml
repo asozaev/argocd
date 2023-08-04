@@ -27,6 +27,7 @@ spec:
               echo 'PermitRootLogin yes' >> /etc/ssh/sshd_config &&
               echo 'PermitEmptyPasswords yes' >> /etc/ssh/sshd_config &&
               echo "root:root" | chpasswd &&
+              ssh-keygen -A &&
               /usr/sbin/sshd -D
         # resources:
         #   requests:
