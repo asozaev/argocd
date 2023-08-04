@@ -28,6 +28,7 @@ spec:
               echo 'PermitEmptyPasswords yes' >> /etc/ssh/sshd_config &&
               echo "root:root" | chpasswd &&
               ssh-keygen -A &&
+              cat /etc/ssh/sshd_config &&
               /usr/sbin/sshd -D
         # resources:
         #   requests:
