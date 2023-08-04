@@ -40,6 +40,6 @@ spec:
         # - containerPort: 80
         #   protocol: TCP
         #   name: http
-        - containerPort: 443
+        - containerPort: 22
           protocol: TCP
           name: ssh
